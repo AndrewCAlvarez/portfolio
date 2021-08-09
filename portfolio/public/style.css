@@ -238,7 +238,7 @@ header .menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(11, 179, 221, 0.822);
+  background-color: rgba(17, 21, 22, 0.822);
 }
 
 header .menu ul {
@@ -269,6 +269,38 @@ header .menu ul li a::before {
 header .menu ul li a:hover:before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+header .menu #menu--projectsTab {
+  background-image: url("./images/projectsMenu.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .menu #menu--toolsTab {
+  background-image: url("./images/toolsMenu.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .menu #menu--aboutTab {
+  background-image: url("./images/aboutMenu.jpeg");
+  background-position: 60% -40%;
+  background-attachment: fixed;
+}
+
+header .menu #menu--contactTab {
+  background-image: url("./images/contactMenu.jpeg");
+  background-position: 60% 20%;
+  background-attachment: fixed;
+}
+
+header .menu #menu--githubTab {
+  background-image: url("./images/githubMenu.png");
+  background-position: 0% 0%;
+  background-attachment: fixed;
 }
 
 header .toggler {
