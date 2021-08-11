@@ -1,3 +1,121 @@
+.button {
+  color: white;
+  border: 1px solid rgba(207, 205, 205, 0.541);
+  padding: 1em;
+  border-radius: 0.7vh;
+  background-color: rgba(168, 166, 166, 0.74);
+  width: 40vw;
+}
+
+.button:focus {
+  -webkit-animation: focusAnimation forwards 0.5s ease-in-out;
+          animation: focusAnimation forwards 0.5s ease-in-out;
+  outline-style: none;
+}
+
+.button--state-success {
+  color: white;
+  padding: 1em;
+  background-color: #52a752;
+}
+
+.button--state-danger {
+  color: white;
+  background-color: #da7373;
+}
+
+.button--state-danger:focus {
+  -webkit-animation: dangerAnimation forwards 0.1s ease-in-out;
+          animation: dangerAnimation forwards 0.1s ease-in-out;
+}
+
+@-webkit-keyframes focusAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes focusAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes dangerAnimation {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: roatate(0deg);
+            transform: roatate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes dangerAnimation {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: roatate(0deg);
+            transform: roatate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   header #menu--projectsTab {
     background-image: url("./images/projectsMenu.jpeg");
@@ -194,4 +312,4 @@
     display: flex;
   }
 }
-/*# sourceMappingURL=mediaqueries.css.map */
+/*# sourceMappingURL=style.css.map */

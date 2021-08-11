@@ -3,7 +3,7 @@
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   header {
     #menu--projectsTab {
-      background-image: url("./images/projectsMenu.jpeg");
+      background-image: url("../../images/projectsMenu.jpeg");
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
@@ -64,7 +64,6 @@
     flex-flow: row nowrap;
     border-bottom: 1px solid rgba(128, 128, 128, 0.39);
     flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.938);
 
     .toggler {
       display: none;
