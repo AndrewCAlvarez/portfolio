@@ -337,10 +337,6 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   text-align: center;
   max-width: 320px;
   width: 70vw;
-  border-radius: 0.25em 0.25em 0.25em 0.25em;
-  background-color: rgba(11, 179, 221, 0.822);
-  -webkit-box-shadow: 0.2em 0.5em white;
-          box-shadow: 0.2em 0.5em white;
 }
 
 .home .home--content .home--content-buttons {
@@ -370,13 +366,9 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   border-radius: 0.7vh;
   margin: 0 auto;
   background-color: #a8a6a6;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .home .home--content .home--content-buttons .button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   outline-style: none;
 }
 
@@ -542,6 +534,10 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   background-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .tools {
   background-image: url(https://images.pexels.com/photos/273222/pexels-photo-273222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   height: 100%;
@@ -660,6 +656,11 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 .tools .tools--content ul li {
   width: 40%;
   max-width: 320px;
+  position: relative;
+  -webkit-animation-name: dropFade;
+          animation-name: dropFade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .tools .tools--content ul li i {
@@ -679,114 +680,6 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 .tools .tools--content ul li .jsIcon {
   -webkit-animation: jsAnimation infinite 13.1s alternate ease-in-out;
           animation: jsAnimation infinite 13.1s alternate ease-in-out;
-}
-
-@-webkit-keyframes htmlAnimation {
-  0% {
-    color: white;
-  }
-  20% {
-    color: white;
-  }
-  40% {
-    color: white;
-  }
-  60% {
-    color: white;
-  }
-  100% {
-    color: tomato;
-  }
-}
-
-@keyframes htmlAnimation {
-  0% {
-    color: white;
-  }
-  20% {
-    color: white;
-  }
-  40% {
-    color: white;
-  }
-  60% {
-    color: white;
-  }
-  100% {
-    color: tomato;
-  }
-}
-
-@-webkit-keyframes cssAnimation {
-  0% {
-    color: white;
-  }
-  20% {
-    color: white;
-  }
-  40% {
-    color: white;
-  }
-  60% {
-    color: white;
-  }
-  100% {
-    color: dodgerblue;
-  }
-}
-
-@keyframes cssAnimation {
-  0% {
-    color: white;
-  }
-  20% {
-    color: white;
-  }
-  40% {
-    color: white;
-  }
-  60% {
-    color: white;
-  }
-  100% {
-    color: dodgerblue;
-  }
-}
-
-@-webkit-keyframes jsAnimation {
-  0% {
-    color: white;
-  }
-  20% {
-    color: white;
-  }
-  40% {
-    color: white;
-  }
-  60% {
-    color: white;
-  }
-  100% {
-    color: orange;
-  }
-}
-
-@keyframes jsAnimation {
-  0% {
-    color: white;
-  }
-  20% {
-    color: white;
-  }
-  40% {
-    color: white;
-  }
-  60% {
-    color: white;
-  }
-  100% {
-    color: orange;
-  }
 }
 
 .tools .tools--content .tools--extraContent {
@@ -1271,6 +1164,82 @@ footer .footer--icon a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@-webkit-keyframes dropFade {
+  0% {
+    top: -10vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0vh;
+    opacity: 1;
+  }
+}
+
+@keyframes dropFade {
+  0% {
+    top: -10vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0vh;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes htmlAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: tomato;
+  }
+}
+
+@keyframes htmlAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: tomato;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: dodgerblue;
+  }
+}
+
+@keyframes cssAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: dodgerblue;
+  }
+}
+
+@-webkit-keyframes jsAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+@keyframes jsAnimation {
+  0% {
+    color: white;
+  }
+  100% {
+    color: orange;
   }
 }
 /*# sourceMappingURL=main.css.map */

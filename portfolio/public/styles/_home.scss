@@ -31,9 +31,6 @@
       text-align: center;
       max-width: 320px;
       width: 70vw;
-      border-radius: 0.25em 0.25em 0.25em 0.25em;
-      background-color: rgba(11, 179, 221, 0.822);
-      box-shadow: 0.2em 0.5em white;
     }
 
     .home--content-buttons {
@@ -54,11 +51,9 @@
         border-radius: 0.7vh;
         margin: 0 auto;
         background-color: rgb(168, 166, 166);
-        transition: all 0.2s ease-in-out;
       }
 
       .button:hover {
-        transform: scale(1.1);
         outline-style: none;
       }
 
