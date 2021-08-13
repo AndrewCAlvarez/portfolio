@@ -51,6 +51,7 @@
     //   background-position: 0% 0%;
     //   background-attachment: fixed;
     // }
+
     div {
       width: 5%;
       height: 10vh;
@@ -148,7 +149,7 @@
             &::before {
               left: 0;
               width: 100%;
-              bottom: 2vh;
+              top: 7vh;
               height: 2px;
               content: "";
               position: absolute;
