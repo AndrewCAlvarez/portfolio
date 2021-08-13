@@ -96,9 +96,11 @@ header {
           position: relative;
           text-decoration: none;
           &::before {
+            // & is sass functionality that means "this"
+            // here it means a::before
             left: 0;
             width: 100%;
-            bottom: 2vh;
+            top: 5vh;
             height: 2px;
             content: "";
             position: absolute;
