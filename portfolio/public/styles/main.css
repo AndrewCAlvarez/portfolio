@@ -890,6 +890,42 @@ html {
   background-color: white;
 }
 
+.contact .contact--content p {
+  width: 100%;
+  padding: 1vh;
+  margin-top: 1vh;
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 1vh;
+  background-color: white;
+  color: #535353;
+}
+
+.contact .contact--content p a {
+  color: #74b5c5;
+  position: relative;
+  text-decoration: none;
+}
+
+.contact .contact--content p a::before {
+  left: 0;
+  width: 100%;
+  top: 3.5vh;
+  height: 2px;
+  content: "";
+  position: absolute;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #74b5c5;
+}
+
+.contact .contact--content p a:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .contact .contact--content form {
   width: 100%;
   display: -webkit-box;
@@ -936,16 +972,12 @@ html {
   padding: 1vh;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   border-radius: 1vh;
   margin-bottom: 3vh;
 }
 
 .contact .contact--content form textarea:focus {
   outline: none;
-  height: 20vh;
-  background-color: rgba(255, 255, 255, 0.904);
 }
 
 .contact .contact--content form button {
@@ -962,9 +994,8 @@ html {
   border-radius: 0.7vh;
 }
 
-.contact .button--state-success:focus {
-  -webkit-animation: focusAnimation forwards 0.5s ease-in-out;
-          animation: focusAnimation forwards 0.5s ease-in-out;
+.contact .button--state-success:hover {
+  background-color: #5ec25e;
   outline-style: none;
 }
 
@@ -1253,8 +1284,6 @@ footer .footer--icon a {
 }
 
 .button:focus {
-  -webkit-animation: focusAnimation forwards 0.5s ease-in-out;
-          animation: focusAnimation forwards 0.5s ease-in-out;
   outline-style: none;
 }
 

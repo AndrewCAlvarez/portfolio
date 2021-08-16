@@ -30,6 +30,38 @@
       background-color: rgb(255, 255, 255);
     }
 
+    p {
+      width: 100%;
+      padding: 1vh;
+      margin-top: 1vh;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 1vh;
+      background-color: rgb(255, 255, 255);
+      color: rgb(83, 83, 83);
+
+      a {
+        color: rgb(116, 181, 197);
+        position: relative;
+        text-decoration: none;
+        //psuedo elements below are for the underline animations
+        &::before {
+          left: 0;
+          width: 100%;
+          top: 3.5vh;
+          height: 2px;
+          content: "";
+          position: absolute;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out;
+          background-color: rgb(116, 181, 197);
+        }
+        &:hover:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+
     form {
       width: 100%;
       display: flex;
@@ -65,14 +97,16 @@
         padding: 1vh;
         font-family: "Nunito", sans-serif;
         font-size: 1rem;
-        transition: all 0.3s ease;
+
         border-radius: 1vh;
         margin-bottom: 3vh;
 
         &:focus {
           outline: none;
-          height: 20vh;
-          background-color: rgba(255, 255, 255, 0.904);
+          // The commented section expands the textarea.
+          // This looks cool, but causes a click on "SEND" to "miss"
+          // and have to be pressed a second time.
+          // height: 20vh;
         }
       }
 
@@ -92,8 +126,9 @@
     border-radius: 0.7vh;
   }
 
-  .button--state-success:focus {
-    animation: focusAnimation forwards 0.5s ease-in-out;
+  .button--state-success:hover {
+    // animation: focusAnimation forwards 0.5s ease-in-out;
+    background-color: rgb(94, 194, 94);
     outline-style: none;
   }
 

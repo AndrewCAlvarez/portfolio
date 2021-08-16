@@ -106,10 +106,17 @@
     <section class="contact" id="contact">
       <div class="contact--content">
           <h1>Contact</h1>
-          <form>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
+          <p>Reach me at 
+            <a href="mailto:andrew@acalvarez.com">andrew@acalvarez.com</a>  
+            or type a message below!
+          </p>
+          <form
+          action="https://formspree.io/f/mleaojzq"
+          method="POST"
+          >
+            <input type="email" name ="_replyto" placeholder="Email" />
+            <input name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message"></textarea>
             <button type="submit" class="button--state-success">SEND</button>
           </form>
 

@@ -11,9 +11,9 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   // Send email
-var emailDestination;
-var emailPassword;
-var transporter = nodemailer.createTransport({
+let emailDestination;
+let emailPassword;
+let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: emailDestination,
@@ -21,7 +21,7 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-var mailOptions = {
+let mailOptions = {
   from: emailDestination,
   to: emailDestination,
   subject: 'Sending email from node.js!',
