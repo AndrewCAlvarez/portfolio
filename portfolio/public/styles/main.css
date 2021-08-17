@@ -1041,7 +1041,7 @@ footer .footer--icon a {
     left: 90%;
   }
   .home {
-    background-size: 500px 100vh;
+    background-size: 500px 500px;
   }
   .contact .contact--content input {
     width: 100vh;
