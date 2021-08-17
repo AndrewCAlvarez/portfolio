@@ -2,56 +2,6 @@
 
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   header {
-    // #menu--projectsTab {
-    //   //  blue rgba(11, 179, 221, 0.822);
-    //   background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.822),
-    //     rgba(127, 11, 221, 0.822)
-    //   );
-    //   background-position: center;
-    //   background-size: cover;
-    //   background-attachment: fixed;
-    // }
-    // #menu--toolsTab {
-    //   background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.822),
-    //     rgba(127, 11, 221, 0.822)
-    //   );
-    //   background-position: center;
-    //   background-size: cover;
-    //   background-attachment: fixed;
-    // }
-    // #menu--aboutTab {
-    //   background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.822),
-    //     rgba(127, 11, 221, 0.822)
-    //   );
-    //   background-position: 60% -40%;
-    //   background-attachment: fixed;
-    //   background-size: cover;
-    // }
-    // #menu--contactTab {
-    //   background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.822),
-    //     rgba(11, 221, 116, 0.822)
-    //   );
-    //   background-position: 60% 20%;
-    //   background-attachment: fixed;
-    // }
-    // #menu--githubTab {
-    //   background-image: linear-gradient(
-    //     to right,
-    //     rgba(255, 255, 255, 0.822),
-    //     rgba(221, 11, 109, 0.822)
-    //   );
-    //   background-position: 0% 0%;
-    //   background-attachment: fixed;
-    // }
-
     div {
       width: 5%;
       height: 10vh;
@@ -60,6 +10,10 @@
     .toggler {
       left: 90%;
     }
+  }
+
+  .home {
+    background-size: 500px 100vh;
   }
   .contact {
     .contact--content {

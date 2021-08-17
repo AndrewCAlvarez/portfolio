@@ -1040,6 +1040,9 @@ footer .footer--icon a {
   header .toggler {
     left: 90%;
   }
+  .home {
+    background-size: 500px 100vh;
+  }
   .contact .contact--content input {
     width: 100vh;
   }
