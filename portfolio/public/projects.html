@@ -24,10 +24,10 @@
         <div>
           <div class="menu">
             <ul>
-              <li id="menu--homeTab"><a href="./index.html">Home</a></li>
               <li id="menu--toolsTab">   <a href="./index.html#tools">Tools</a></li>
               <li id="menu--aboutTab">   <a href="./index.html#about">About</a></li>
-              <li id="menu--contactTab"> <a href="./index.html#contact">Contact</a></li>
+              <li id="menu--homeTab"><a href="#projects">Projects</a></li>
+              <li id="menu--contactTab"> <a href="#contact">Contact</a></li>
               <li id="menu--githubTab">
                 <a
                   href="https://github.com/AndrewCAlvarez/andrewcalvarez.github.io"
@@ -45,7 +45,7 @@
         <a href="#projects"><i class="fas fa-angle-double-down"></i></a>
       </div>
 
-      <h1>Project Showcase</h1>
+      <h1>Previous Work</h1>
       <div class="projects--content">
         <ul>
           <li>
@@ -67,10 +67,17 @@
     <section class="contact" id="contact">
       <div class="contact--content">
           <h1>Contact</h1>
-          <form>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
+          <p>Reach me at 
+            <a href="mailto:andrew@acalvarez.com">andrew@acalvarez.com</a>  
+            or type a message below!
+          </p>
+          <form
+          action="https://formspree.io/f/mleaojzq"
+          method="POST"
+          >
+            <input type="email" name ="_replyto" placeholder="Email" />
+            <input name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message"></textarea>
             <button type="submit" class="button--state-success">SEND</button>
           </form>
 
