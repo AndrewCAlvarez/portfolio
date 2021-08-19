@@ -29,12 +29,8 @@
     }
   }
   .home {
-<<<<<<< Updated upstream
-    background-size: 500px 100vh;
-=======
     background-size: 100vh 100vh;
     background-attachment: scroll;
->>>>>>> Stashed changes
   }
 
   .tools {
@@ -177,6 +173,10 @@
       left: 0vh;
       transform: rotate(90deg);
     }
+  }
+  .home {
+    background-size: 100vh 100vh;
+    background-attachment: scroll;
   }
 
   .projects {

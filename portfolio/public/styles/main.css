@@ -12,7 +12,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.938);
+  background-color: #525e65;
 }
 
 header div {
@@ -186,10 +186,16 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
           transform: rotate(90deg);
 }
 
+#box {
+  width: 100vw;
+  height: 100vh;
+  background-color: #549ce4;
+}
+
 .home {
   background-image: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   height: 80vh;
-  background-size: cover;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -197,7 +203,7 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 
 .home .home--content {
   color: white;
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -949,9 +955,6 @@ footer .footer--icon a {
     left: 90%;
   }
   .home {
-<<<<<<< Updated upstream
-    background-size: 500px 100vh;
-=======
     background-size: 100vh 100vh;
     background-attachment: scroll;
   }
@@ -962,7 +965,6 @@ footer .footer--icon a {
   .contact {
     background-size: 200vh 200vh;
     background-attachment: scroll;
->>>>>>> Stashed changes
   }
   .contact .contact--content input {
     width: 100vh;
@@ -1111,6 +1113,10 @@ footer .footer--icon a {
     left: 0vh;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+  }
+  .home {
+    background-size: 100vh 100vh;
+    background-attachment: scroll;
   }
   .projects .projects--content ul li {
     max-width: 328px;
@@ -1305,5 +1311,33 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.home {
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.tools {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.about {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.contact {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

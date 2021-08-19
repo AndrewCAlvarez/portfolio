@@ -1,17 +1,23 @@
+#box {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(84, 156, 228);
+}
+
 .home {
   //Parallax image
   background-image: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   //Set a height
   height: 80vh;
   //Create parallax effect
-  background-size: cover;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 
   .home--content {
     color: white;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     padding: 2vh;
     align-content: center;

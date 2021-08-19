@@ -14,9 +14,10 @@
     <script src="https://kit.fontawesome.com/86840570f2.js"></script>
     <title>Andrew C Alvarez</title>
   </head>
-  <body>
+  <body  ontouchmove="transitionHome()">
+
     <header>
-      <h4 class="logo"><a href="#home">Andrew C Alvarez</a></h4>
+      <h4 class="logo"><a href="#home" onclick="transitionHome()">Andrew C Alvarez</a></h4>
 
       <input type="checkbox" class="toggler" />
       <div>
@@ -24,9 +25,9 @@
         <div>
           <div class="menu">
             <ul>
-              <li id="menu--toolsTab">   <a href="#tools">Tools</a></li>
-              <li id="menu--aboutTab">   <a href="#about">About</a></li>
-              <li id="menu--contactTab"> <a href="#contact">Contact</a></li>
+              <li id="menu--toolsTab">   <a href="#tools" onclick="transitionTools()">Tools</a></li>
+              <li id="menu--aboutTab">   <a href="#about" onclick="transitionAbout()">About</a></li>
+              <li id="menu--contactTab"> <a href="#contact" onclick="transitionContact()">Contact</a></li>
               <li id="menu--projectsTab"><a href="./projects.html">Projects</a></li>
               <li id="menu--githubTab">
                 <a
@@ -43,8 +44,6 @@
     <section class="home" id="home">
       <div class="home--content" id="home__content">
         <div class="home--content-text">
-            <div id="home--content-background">
-            </div>
             <h1>Welcome Web Development</h1>
             <p>If you're expanding your business, building a blog, or representing your brand, I'm here to make it happen.</p>
         </div>
@@ -57,7 +56,7 @@
       </div>
     </section>
 
-    <section class="tools" id="tools">
+    <section class="tools" id="tools" >
       <div class="tools--content">
         <h1>Tools</h1>
         <ul>
@@ -129,5 +128,7 @@
             ></a>
           </div>
     </footer>
+  <script src="RenderPage.js"></script>
+    
   </body>
 </html>
