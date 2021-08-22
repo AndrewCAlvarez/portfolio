@@ -39,13 +39,6 @@ divHomeContent.class = 'home--content';
 divHomeContentText.class = 'home--content-text';
 divHomeContentText.class = 'home--content-text';
 
-let sections = {
-    home: document.getElementById('home'),
-    tools: document.getElementById('tools'),
-    about: document.getElementById('about'),
-    contact: document.getElementById('contact')
-}
-
 let currentPage = document.getElementById('home');
 
 function transitionHome(){
@@ -56,6 +49,18 @@ function transitionHome(){
 function transitionTools(){
     let tools = document.getElementById('tools');
     transitionAnim(tools, currentPage);
+    let iconArr = document.getElementsByClassName('toolsIcon');
+    for (let index = 0; index < iconArr.length; index++) {
+        const element = iconArr[index];
+        element.animate([
+            //keyframes
+            { transform: 'translateY(10vh)' },
+            { transform: 'translateY(0vh)' }
+        ],{
+            //timing
+            duration: 300
+        })
+    }
 }
 
 function transitionAbout(){
@@ -97,6 +102,7 @@ function transitionAnim(transitionToElm, transitionFromElm){
             transitionFromElm.style.opacity = fromOpacity;
         }
     }
+    transitionToElm.style.zIndex = 1;
+    transitionFromElm.style.zIndex = 0;
     
 }
-

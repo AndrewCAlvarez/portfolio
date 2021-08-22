@@ -1,0 +1,9 @@
+{
+    "name": "Andrew C Alvarez",
+    "short_name": "ACAlvarez",
+    "start_url": "./public/index.html",
+    "scope": "./",
+    "theme_color": "#ffd31d",
+    "background_color": "#333",
+    "display": "standalone"
+  }

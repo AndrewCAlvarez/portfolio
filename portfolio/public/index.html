@@ -12,12 +12,20 @@
     />
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/86840570f2.js"></script>
+    <!-- PWA -->
+    <link rel="manifest" href="../manifest.json">
+
     <title>Andrew C Alvarez</title>
   </head>
-  <body  ontouchmove="transitionHome()">
+  <body class="wrapper">
 
     <header>
-      <h4 class="logo"><a href="#home" onclick="transitionHome()">Andrew C Alvarez</a></h4>
+      <h4 class="logo">
+        <a href="#home" onclick="transitionHome()">
+            <div id="sunBackground"></div>
+            <i class="fas fa-home"></i>
+        </a>
+     </h4>
 
       <input type="checkbox" class="toggler" />
       <div>
@@ -49,7 +57,7 @@
         </div>
         <div class="home--content-buttons">
           <div>
-            <a href="#contact" id="contact--button" class="button button--state-success">Let's Talk</a>
+            <a href="#contact" id="contact--button" class="button button--state-success" onclick="transitionContact()">Let's Talk</a>
             <a href="./projects.html" class="button">My Work</a>
           </div>
         </div>
@@ -60,9 +68,9 @@
       <div class="tools--content">
         <h1>Tools</h1>
         <ul>
-          <li><i class="fab fa-html5 htmlIcon"></i></li>
-          <li><i class="fab fa-css3-alt cssIcon"></i></li>
-          <li><i class="fab fa-js-square jsIcon"></i></li>
+          <li><i class="fab fa-html5 htmlIcon toolsIcon"></i></li>
+          <li><i class="fab fa-css3-alt cssIcon toolsIcon"></i></li>
+          <li><i class="fab fa-js-square jsIcon toolsIcon"></i></li>
         </ul>
         <div class="tools--extraContent">
           <div class="bar--animation"><i class="fas fa-dot-circle"></i></div>
