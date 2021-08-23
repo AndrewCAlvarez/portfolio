@@ -1,0 +1,78 @@
+.home {
+  //Parallax image
+  background-image: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  //Set a height
+  height: 80vh;
+  //Create parallax effect
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  .home--content {
+    color: white;
+    height: 80vh;
+    display: flex;
+    padding: 2vh;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    // #home--content-background {
+    //   widows: 100px;
+    //   height: 100px;
+    //   background-color: saddlebrown;
+    //   z-index: 1000;
+    // }
+
+    .home--content-text {
+      margin: 0 auto;
+      text-align: center;
+      max-width: 320px;
+      width: 70vw;
+    }
+
+    .home--content-buttons {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-content: center;
+      margin-top: 10vh;
+
+      a {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+
+      .button {
+        color: white;
+        border: none;
+        border-radius: 0.7vh;
+        margin: 0 auto;
+        background-color: rgb(168, 166, 166);
+      }
+
+      .button:hover {
+        outline-style: none;
+      }
+
+      .button--state-success {
+        background-color: rgb(82, 167, 82);
+      }
+
+      #contact--button {
+        margin-right: 5vw;
+      }
+
+      @keyframes focusAnimation {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

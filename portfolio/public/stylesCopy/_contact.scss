@@ -1,0 +1,140 @@
+.contact {
+  //Parallax image
+  background-image: url(https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  //Set a height
+  height: 80vh;
+  //Create parallax effect
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  text-align: center;
+  padding-top: 10vh;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+
+  .contact--content {
+    width: 87%;
+    max-width: 600px;
+    h1 {
+      width: 100%;
+      padding: 1vh;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 1vh;
+      letter-spacing: 1vh;
+      background-color: rgb(255, 255, 255);
+    }
+
+    p {
+      width: 100%;
+      padding: 1vh;
+      margin-top: 1vh;
+      font-size: 1.3rem;
+      text-align: center;
+      border-radius: 1vh;
+      background-color: rgb(255, 255, 255);
+      color: rgb(83, 83, 83);
+
+      a {
+        color: rgb(116, 181, 197);
+        position: relative;
+        text-decoration: none;
+        //psuedo elements below are for the underline animations
+        &::before {
+          left: 0;
+          width: 100%;
+          top: 3.5vh;
+          height: 2px;
+          content: "";
+          position: absolute;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out;
+          background-color: rgb(116, 181, 197);
+        }
+        &:hover:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-top: 2vh;
+      flex-direction: column;
+      justify-content: center;
+
+      input {
+        width: 100%;
+        color: rgb(116, 181, 197);
+        border: none;
+        padding: 1vh;
+        font-size: 1rem;
+        border-radius: 1vh;
+        margin-bottom: 3vh;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+
+        &:focus {
+          outline: none;
+          background-color: rgba(255, 255, 255, 0.904);
+        }
+      }
+
+      textarea {
+        color: rgb(116, 181, 197);
+        width: 100%;
+        min-height: 10vh;
+        border: none;
+        height: 5vh;
+        resize: none;
+        padding: 1vh;
+        font-family: "Nunito", sans-serif;
+        font-size: 1rem;
+
+        border-radius: 1vh;
+        margin-bottom: 3vh;
+
+        &:focus {
+          outline: none;
+          // The commented section expands the textarea.
+          // This looks cool, but causes a click on "SEND" to "miss"
+          // and have to be pressed a second time.
+          // height: 20vh;
+        }
+      }
+
+      button {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .button--state-success {
+    color: white;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 0.7vh;
+  }
+
+  .button--state-success:hover {
+    // animation: focusAnimation forwards 0.5s ease-in-out;
+    background-color: rgb(94, 194, 94);
+    outline-style: none;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 13vh auto 0;
+  }
+}
