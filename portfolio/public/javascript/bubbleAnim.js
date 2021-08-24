@@ -1,7 +1,6 @@
-let bubbles = document.getElementsByClassName("home--pic-bubble");
 
 
-// let i = setInterval(animateBubble, 50);
+// let animateBubbleInterval = setInterval(animateBubble, 50);
 let scale = 1;
 let shrinking = false;
 function animateBubble(){
@@ -26,39 +25,102 @@ function animateBubble(){
 and then give them thier classes and ids along with generating the 
 necessary javascript variables to use the bubble animation on.
  */
-let bubble1 = document.getElementById("home--pic-bubble1");
 
-let bubble1Interval = setInterval(orbitAnim, 1);
+
+var jsonObj = {
+    members: 
+           {
+            host: "hostName",
+            viewers: 
+            {
+                user1: "value1",
+                user2: "value2",
+                user3: "value3"
+            }
+        }
+}
+
+var i;
+
+for(i=4; i<=8; i++){
+    var newUser = "user" + i;
+    var newValue = "value" + i;
+    jsonObj.members.viewers[newUser] = newValue ;
+
+}
+
+// console.log(jsonObj);
+
+
+
+
+let bubbleInterval = setInterval(fallAnim, 5);
 let windowWidth = window.innerWidth - 25;
 let windowHeight = window.innerHeight - 25;
-let bubble1Left = Math.floor(Math.random() * windowWidth);
-let bubble1Top = 0;
-let moveForwards = true;
-let isFalling = true;
-function orbitAnim(){
-    console.log(`bubble1Left: ${bubble1Left}\n Window Width: ${windowWidth}`);
+let bubbles = document.getElementsByClassName("home--pic-bubble");
 
-    console.log(bubble1Left == windowWidth);
-    if(isFalling){
-        bubble1Top++;
-        if(bubble1Top == windowHeight){
-            clearInterval(bubble1Interval);
+
+let bubblesJson = {
+    bubbles:{}
+}
+for (let i = 0; i < bubbles.length; i++) {
+    const element = bubbles[i];
+    let newBubble = "bubble" + i;
+    let left = Math.floor(Math.random() * windowWidth);
+    let top = Math.floor(Math.random() * windowHeight);
+    bubblesJson.bubbles[newBubble] = {
+        object: element,
+        left: left,
+        top: top,
+        moveForwards: true,
+        isFalling: true,
+    };
+    element.style.left = left + "px";
+    element.style.top = top + "px";
+
+}
+
+
+function fallAnim(){
+    for (let i = 0; i < bubbles.length; i++) {
+        const element = bubblesJson.bubbles["bubble" + i];
+        if(element.isFalling){
+            element.top++;
+            if(element.top == windowHeight){
+                element.isFalling = false;
+            }
+            if(element.moveForwards){
+                element.left++;
+                if(element.left >= windowWidth){
+                    element.moveForwards = false;
+                }
+            }else{
+                element.left--;
+                if(element.left == 0){
+                    element.moveForwards = true;
+                }
+            }
+        }else if(!element.isFalling){
+            element.top--;
+            if(element.top == 0){
+                element.isFalling = true;
+            }
+            if(element.moveForwards){
+                element.left++;
+                if(element.left >= windowWidth){
+                    element.moveForwards = false;
+                }
+            }else{
+                element.left--;
+                if(element.left == 0){
+                    element.moveForwards = true;
+                }
+            }
         }
+        
+        element.object.style.left = element.left.toString() + 'px';
+        element.object.style.top = element.top.toString() + 'px';
     }
-    if(moveForwards){
-        bubble1Left++;
-        if(bubble1Left >= windowWidth){
-            moveForwards = false;
-        }
-    }else{
-        bubble1Left--;
-        if(bubble1Left == 0){
-            moveForwards = true;
-        }
-    }
-    bubble1.style.left = bubble1Left.toString() + 'px';
-    bubble1.style.top = bubble1Top.toString() + 'px';
-
-
+    
     
 }
