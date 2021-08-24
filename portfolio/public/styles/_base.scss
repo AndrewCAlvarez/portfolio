@@ -1,11 +1,11 @@
 $blue: rgba(11, 179, 221, 1);
-
+$frosted-background: linear-gradient(red, blue);
 .button {
   color: white;
-  border: 1px solid rgba(207, 205, 205, 0.541);
   padding: 1em;
   border-radius: 0.7vh;
-  background-color: rgba(168, 166, 166, 0.74);
+
+  background-color: rgba(210, 222, 230, 0.74);
   width: 40vw;
 }
 
