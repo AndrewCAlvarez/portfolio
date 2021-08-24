@@ -7,8 +7,18 @@ header {
   top: 90vh;
   flex-flow: wrap;
   flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.938);
+  background-color: $frost-noOpacity;
 
+  .header--background {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient(
+      to right,
+      rgb(11, 179, 221),
+      rgb(82, 167, 82)
+    );
+  }
   // div {
   //   width: 15%;
   //   height: 10vh;

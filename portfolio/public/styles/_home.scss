@@ -17,12 +17,30 @@
     align-content: center;
     flex-direction: column;
     justify-content: center;
+
     background-color: rgba(0, 0, 0, 0.5);
 
-    img {
-      width: 25vw;
-      height: 25vw;
+    .home--pic-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: linear-gradient(
+        to right,
+        rgb(11, 179, 221),
+        rgb(82, 167, 82)
+      );
       border-radius: 100vh;
+      width: 40vw;
+      height: 40vw;
+      img {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 100vh;
+        border: 0.25em solid $frost;
+      }
     }
 
     // #home--content-background {
@@ -81,10 +99,6 @@
 
       .button:hover {
         outline-style: none;
-      }
-
-      #contact--button {
-        // margin-right: 5vw;
       }
 
       @keyframes focusAnimation {
