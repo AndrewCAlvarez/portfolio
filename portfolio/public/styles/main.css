@@ -2,8 +2,7 @@
   color: white;
   padding: 1em;
   border-radius: 0.7vh;
-  background-color: rgba(210, 222, 230, 0.74);
-  width: 40vw;
+  background-color: rgba(121, 133, 143, 0.74);
 }
 
 .button:focus {
@@ -136,7 +135,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #d2dee6;
+  background-color: rgba(210, 222, 230, 0.74);
 }
 
 header .header--background {
@@ -163,7 +162,7 @@ header .logo a {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
   font-weight: bold;
   margin-left: 2%;
@@ -182,7 +181,7 @@ header .menu {
 }
 
 header .menu ul {
-  font-size: 3rem;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,53 +277,46 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2vh;
+  text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home .home--content .home--pic-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  border-radius: 100vh;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0bb3dd), to(#52a752));
+  background-image: linear-gradient(to right, #0bb3dd, #52a752);
+  border-radius: 50%;
   width: 40vw;
   height: 40vw;
 }
 
 .home .home--content .home--pic-container img {
-  width: 40vw;
-  height: 40vw;
-  border-radius: 100vh;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   border: 0.25em solid rgba(210, 222, 230, 0.74);
 }
 
 .home .home--content .home--content-text {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 320px;
-  width: 70vw;
+  width: 100vw;
+}
+
+.home .home--content .home--content-text h1 {
+  font-size: 2.5rem;
 }
 
 .home .home--content .home--buttons-container {
@@ -364,8 +356,8 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   background-image: linear-gradient(to right, #0bb3dd, #52a752);
   border-radius: 0.7vh;
   height: 10vh;
-  width: 20vw;
-  min-width: 200px;
+  width: 85vw;
+  min-width: 100px;
   margin-bottom: 1vh;
   padding: 0.5%;
 }

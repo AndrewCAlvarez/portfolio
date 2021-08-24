@@ -1,12 +1,12 @@
 $blue: rgba(11, 179, 221, 1);
 $frost: rgba(210, 222, 230, 0.74);
+$frost-dark: rgba(121, 133, 143, 0.74);
 
 .button {
   color: white;
   padding: 1em;
   border-radius: 0.7vh;
-  background-color: $frost;
-  width: 40vw;
+  background-color: $frost-dark;
 }
 
 .button:focus {

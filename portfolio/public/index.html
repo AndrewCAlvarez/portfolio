@@ -16,22 +16,22 @@
   </head>
   <body>
     <header>
-      <div class="header--background"></div>
-      <h4 class="logo"><a href="#home">A</a></h4>
+      <!-- <div class="header--background"></div> -->
+      <h4 class="logo"><a href="#home"><i class="fas fa-home"></i></a></h4>
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div class="hamburger--bar"></div></div>
       <div class="menu">
         <ul>
           <li id="menu--toolsTab">   <a href="#tools"   "><i class="fas fa-wrench"></i></a></li>
-          <li id="menu--aboutTab">   <a href="#about"   ">A</a></li>
-          <li id="menu--contactTab"> <a href="#contact" ">C</a></li>
+          <li id="menu--aboutTab">   <a href="#about"   "><i class="fas fa-user"></i></a></li>
+          <li id="menu--contactTab"> <a href="#contact" "><i class="fas fa-envelope"></i></a></li>
           <li id="menu--projectsTab"><a href="./projects.html" target="_blank">P</a></li>
-          <li id="menu--githubTab">
+          <!-- <li id="menu--githubTab">
             <a
               href="https://github.com/AndrewCAlvarez/portfolio"
               target="_blank"><i class="fab fa-github-alt"></i></a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
 
@@ -39,18 +39,21 @@
 
     <section class="home" id="home">
       <div class="home--content" id="home__content">
+        
         <div class="home--content-text">
-          <div id="home--content-background">
-          </div>
-          <div class="home--pic-container">
-            <img src="./images/profilePicCropped.jpg" alt="" />
-          </div>
+          <div id="home--content-background"></div>
+          
           <h1>Andrew Alvarez</h1>
-            <p>There's a whole world of code out there, and I am happy to be a small part of it.</p>
+          <p>There's a whole world of code out there, and I am happy to be a small part of it.</p>
+        </div>
+        <div class="home--pic-container">
+          <img src="./images/profilePicCropped.jpg" alt="" />
         </div>
         <div class="home--buttons-container">
-            <div id="button--contact-border" class="button--home"><a href="#contact" id="contact--button" class="button">Let's Talk</a></div>
+            <div>
+              <div id="button--contact-border" class="button--home"><a href="#contact" id="contact--button" class="button">Let's Talk</a></div>
             <div id="button--projects-border" class="button--home"><a href="./projects.html" class="button ">My Work</a></div>
+            </div>
         </div>
       </div>
     </section>
