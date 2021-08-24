@@ -4,10 +4,11 @@ header {
   display: flex;
   z-index: 5000;
   position: fixed;
-  top: 90vh;
+  bottom: 0;
   flex-flow: wrap;
   flex-direction: row;
   background-color: $frost;
+  overflow-y: scroll;
 
   .header--background {
     position: absolute;

@@ -2,7 +2,7 @@
   color: white;
   padding: 1em;
   border-radius: 0.7vh;
-  background-color: rgba(121, 133, 143, 0.74);
+  background-color: rgba(146, 153, 158, 0.74);
 }
 
 .button:focus {
@@ -128,7 +128,7 @@ header {
   display: flex;
   z-index: 5000;
   position: fixed;
-  top: 90vh;
+  bottom: 0;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   -webkit-box-orient: horizontal;
@@ -136,6 +136,7 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: rgba(210, 222, 230, 0.74);
+  overflow-y: scroll;
 }
 
 header .header--background {
@@ -272,7 +273,7 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 }
 
 .home .home--content {
-  color: white;
+  color: rgba(210, 222, 230, 0.74);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,12 +291,24 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15vh;
+  padding-top: 5vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home .home--content .home--pic-container {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left top, right top, from(#0bb3dd), to(#52a752));
   background-image: linear-gradient(to right, #0bb3dd, #52a752);
   border-radius: 50%;
@@ -307,12 +320,40 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   padding: 2%;
   width: 100%;
   height: 100%;
+  z-index: 5000;
   border-radius: 50%;
-  border: 0.25em solid rgba(210, 222, 230, 0.74);
+  border: 0.25em solid rgba(146, 153, 158, 0.74);
+}
+
+.home .home--content .home--pic-container .home--pic-bubble {
+  overflow: hidden;
+  padding: 2%;
+  position: absolute;
+  left: 0%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 0.25em solid rgba(146, 153, 158, 0.74);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0bb3dd), to(#60a160));
+  background-image: linear-gradient(to right, #0bb3dd, #60a160);
+  opacity: 0.3;
+}
+
+.home .home--content .home--pic-container #home--pic-bubble1 {
+  left: 15%;
+}
+
+.home .home--content .home--pic-container #home--pic-bubble2 {
+  left: 75%;
+}
+
+.home .home--content .home--pic-container #home--pic-bubble3 {
+  left: 90%;
 }
 
 .home .home--content .home--content-text {
   width: 100vw;
+  margin-bottom: 5vh;
 }
 
 .home .home--content .home--content-text h1 {
@@ -363,7 +404,7 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 }
 
 .home .home--content .home--buttons-container a {
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-decoration: none;
   width: 100%;
   height: 100%;

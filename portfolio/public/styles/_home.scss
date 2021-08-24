@@ -10,7 +10,7 @@
   background-attachment: fixed;
 
   .home--content {
-    color: white;
+    color: $frost;
     height: 100vh;
     display: flex;
     text-align: center;
@@ -18,12 +18,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 15vh;
-
+    padding-top: 5vh;
     background-color: rgba(0, 0, 0, 0.5);
 
     .home--pic-container {
-      display: inline-block;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
       background-image: linear-gradient(
         to right,
         rgb(11, 179, 221),
@@ -36,20 +38,40 @@
         padding: 2%;
         width: 100%;
         height: 100%;
+        z-index: 5000;
         border-radius: 50%;
-        border: 0.25em solid $frost;
+        border: 0.25em solid $frost-dark;
+      }
+
+      .home--pic-bubble {
+        overflow: hidden;
+        padding: 2%;
+        position: absolute;
+        left: 0%;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 0.25em solid $frost-dark;
+        background-image: linear-gradient(
+          to right,
+          rgb(11, 179, 221),
+          rgb(96, 161, 96)
+        );
+        opacity: 0.3;
+      }
+      #home--pic-bubble1 {
+        left: 15%;
+      }
+      #home--pic-bubble2 {
+        left: 75%;
+      }
+      #home--pic-bubble3 {
+        left: 90%;
       }
     }
-
-    // #home--content-background {
-    //   widows: 100px;
-    //   height: 100px;
-    //   background-color: saddlebrown;
-    //   z-index: 1000;
-    // }
-
     .home--content-text {
       width: 100vw;
+      margin-bottom: 5vh;
 
       h1 {
         font-size: 2.5rem;
@@ -84,7 +106,7 @@
       }
 
       a {
-        font-size: 1rem;
+        font-size: 1.25rem;
         text-decoration: none;
         width: 100%;
         height: 100%;
