@@ -54,7 +54,7 @@ for(i=4; i<=8; i++){
 
 
 
-let bubbleInterval = setInterval(fallAnim, 5);
+let bubbleInterval = setInterval(fallAnim, 50);
 let windowWidth = window.innerWidth - 25;
 let windowHeight = window.innerHeight - 25;
 let bubbles = document.getElementsByClassName("home--pic-bubble");
