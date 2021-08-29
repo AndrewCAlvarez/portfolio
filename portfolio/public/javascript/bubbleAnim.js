@@ -1,60 +1,10 @@
-
-
-// let animateBubbleInterval = setInterval(animateBubble, 50);
-let scale = 1;
-let shrinking = false;
-function animateBubble(){
-    for (let index = 0; index < bubbles.length; index++) {
-        const element = bubbles[index];
-        if(!shrinking){
-            scale += 0.001;
-            element.style.transform = "scale(" + scale.toString() + ")";
-            if(scale > 2){
-                shrinking = true;
-            }
-        }else{
-            scale -= 0.001;
-            element.style.transform = "scale(" + scale.toString() + ")";
-            if(scale < 1){
-                shrinking = false;
-            }
-        }
-    }
-}
 /* I could use javascript to create the bubble elements one by one 
 and then give them thier classes and ids along with generating the 
 necessary javascript variables to use the bubble animation on.
  */
 
-
-var jsonObj = {
-    members: 
-           {
-            host: "hostName",
-            viewers: 
-            {
-                user1: "value1",
-                user2: "value2",
-                user3: "value3"
-            }
-        }
-}
-
-var i;
-
-for(i=4; i<=8; i++){
-    var newUser = "user" + i;
-    var newValue = "value" + i;
-    jsonObj.members.viewers[newUser] = newValue ;
-
-}
-
-// console.log(jsonObj);
-
-
-
-
-let bubbleInterval = setInterval(fallAnim, 50);
+let fallSpeed = 1000;
+let bubbleInterval = setInterval(fallAnim, 5);
 let windowWidth = window.innerWidth - 25;
 let windowHeight = window.innerHeight - 25;
 let bubbles = document.getElementsByClassName("home--pic-bubble");

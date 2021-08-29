@@ -7,19 +7,14 @@ header {
   bottom: 0;
   flex-flow: wrap;
   flex-direction: row;
-  background-color: rgb(166, 240, 243);
-  overflow-y: scroll;
+  background-image: linear-gradient(
+    to right,
+    rgb(11, 179, 221),
+    rgb(82, 167, 82)
+  );
+  padding-top: 5px;
+  border-top-left-radius: 10%;
 
-  .header--background {
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    background-image: linear-gradient(
-      to right,
-      rgb(11, 179, 221),
-      rgb(82, 167, 82)
-    );
-  }
   // div {
   //   width: 15%;
   //   height: 10vh;
@@ -84,6 +79,8 @@ header {
     position: relative;
 
     ul {
+      border-top-left-radius: 35%;
+      border-top-right-radius: 10%;
       font-size: 2rem;
       display: flex;
       text-align: center;
@@ -95,27 +92,38 @@ header {
       height: 100%;
       font-weight: bolder;
       list-style-type: none;
+      background-color: linear-gradient(
+        to right,
+        rgb(11, 179, 221),
+        rgb(82, 167, 82)
+      );
+      background-size: 100px 50px;
 
       li {
         display: inline;
+
         a {
-          color: black;
+          color: white;
           position: relative;
           text-decoration: none;
           font-size: 1rem;
+          z-index: 1;
           &::before {
             // & is sass functionality that means "this"
             // here it means a::before
             //This is for the underline bars that pop up when link is hovered
-            left: 0;
+            left: -1vw;
+            position: absolute;
             width: 100%;
-            top: 5vh;
-            height: 2px;
+            top: 0;
+            height: 100%;
             content: "";
             position: absolute;
             transform: scaleX(0);
             transition: all 0.3s ease-in-out;
-            background-color: #fff;
+            padding: 5px;
+            z-index: -1;
+            border-bottom: 2px solid white;
           }
           &:hover:before {
             transform: scaleX(1);

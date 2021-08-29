@@ -135,16 +135,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #a6f0f3;
-  overflow-y: scroll;
-}
-
-header .header--background {
-  position: absolute;
-  width: 100vw;
-  height: 10vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#0bb3dd), to(#52a752));
   background-image: linear-gradient(to right, #0bb3dd, #52a752);
+  padding-top: 5px;
+  border-top-left-radius: 10%;
 }
 
 header .logo {
@@ -181,6 +175,8 @@ header .menu {
 }
 
 header .menu ul {
+  border-top-left-radius: 35%;
+  border-top-right-radius: 10%;
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +197,8 @@ header .menu ul {
   height: 100%;
   font-weight: bolder;
   list-style-type: none;
+  background-color: linear-gradient(to right, #0bb3dd, #52a752);
+  background-size: 100px 50px;
 }
 
 header .menu ul li {
@@ -208,24 +206,28 @@ header .menu ul li {
 }
 
 header .menu ul li a {
-  color: black;
+  color: white;
   position: relative;
   text-decoration: none;
   font-size: 1rem;
+  z-index: 1;
 }
 
 header .menu ul li a::before {
-  left: 0;
+  left: -1vw;
+  position: absolute;
   width: 100%;
-  top: 5vh;
-  height: 2px;
+  top: 0;
+  height: 100%;
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  padding: 5px;
+  z-index: -1;
+  border-bottom: 2px solid white;
 }
 
 header .menu ul li a:hover:before {
@@ -407,10 +409,11 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 }
 
 .home .home--content .home--buttons-container a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
+  text-align: center;
+  width: 98%;
+  height: 95%;
 }
 
 .home .home--content .home--buttons-container .button {
@@ -950,22 +953,20 @@ html {
 }
 
 .contact .contact--content p a::before {
-  left: 0;
   width: 100%;
-  top: 3.5vh;
-  height: 2px;
+  height: 100%;
   content: "";
   position: absolute;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #74b5c5;
 }
 
 .contact .contact--content p a:hover:before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  border-bottom: 0.1em solid #74b5c5;
 }
 
 .contact .contact--content form {
@@ -988,7 +989,7 @@ html {
 
 .contact .contact--content form input {
   width: 100%;
-  color: #74b5c5;
+  color: black;
   border: none;
   padding: 1vh;
   font-size: 1rem;

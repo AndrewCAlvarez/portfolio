@@ -46,18 +46,16 @@
         text-decoration: none;
         //psuedo elements below are for the underline animations
         &::before {
-          left: 0;
           width: 100%;
-          top: 3.5vh;
-          height: 2px;
+          height: 100%;
           content: "";
           position: absolute;
           transform: scaleX(0);
           transition: all 0.3s ease-in-out;
-          background-color: rgb(116, 181, 197);
         }
         &:hover:before {
           transform: scaleX(1);
+          border-bottom: 0.1em solid rgb(116, 181, 197);
         }
       }
     }
@@ -72,7 +70,7 @@
 
       input {
         width: 100%;
-        color: rgb(116, 181, 197);
+        color: black;
         border: none;
         padding: 1vh;
         font-size: 1rem;

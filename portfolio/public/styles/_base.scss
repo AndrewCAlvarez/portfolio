@@ -1,4 +1,5 @@
 $blue: rgba(11, 179, 221, 1);
+$green: rgb(82, 167, 82);
 $frost: rgba(210, 222, 230, 0.74);
 $frost-dark: rgba(146, 153, 158, 0.74);
 
@@ -17,7 +18,7 @@ $frost-dark: rgba(146, 153, 158, 0.74);
 .button--state-success {
   color: white;
   padding: 1em;
-  background-color: rgb(82, 167, 82);
+  background-color: $green;
 }
 
 .button--state-danger {
