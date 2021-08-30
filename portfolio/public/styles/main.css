@@ -1,8 +1,7 @@
 .button {
   color: white;
-  padding: 1em;
   border-radius: 0.7vh;
-  background-color: rgba(146, 153, 158, 0.74);
+  background-color: rgba(146, 153, 158, 0.4);
 }
 
 .button:focus {
@@ -110,6 +109,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  background-color: black;
 }
 
 input,
@@ -138,7 +138,6 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#0bb3dd), to(#52a752));
   background-image: linear-gradient(to right, #0bb3dd, #52a752);
   padding-top: 5px;
-  border-top-left-radius: 10%;
 }
 
 header .logo {
@@ -203,6 +202,7 @@ header .menu ul {
 
 header .menu ul li {
   display: inline;
+  height: 80%;
 }
 
 header .menu ul li a {
@@ -211,6 +211,7 @@ header .menu ul li a {
   text-decoration: none;
   font-size: 1rem;
   z-index: 1;
+  height: 100%;
 }
 
 header .menu ul li a::before {
@@ -277,7 +278,7 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 }
 
 .home .home--content {
-  color: rgba(210, 222, 230, 0.74);
+  color: #c7c6c6;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,9 +325,9 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   padding: 2%;
   width: 100%;
   height: 100%;
-  z-index: 5000;
+  z-index: 1000;
   border-radius: 50%;
-  border: 0.25em solid rgba(146, 153, 158, 0.74);
+  border: 0.25em solid rgba(146, 153, 158, 0.4);
 }
 
 .home .home--content .home--pic-container .home--pic-bubble {
@@ -343,18 +344,6 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   z-index: 0;
 }
 
-.home .home--content .home--pic-container #home--pic-bubble1 {
-  left: 15%;
-}
-
-.home .home--content .home--pic-container #home--pic-bubble2 {
-  left: 75%;
-}
-
-.home .home--content .home--pic-container #home--pic-bubble3 {
-  left: 90%;
-}
-
 .home .home--content .home--content-text {
   width: 100vw;
   margin-bottom: 5vh;
@@ -366,7 +355,8 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
 }
 
 .home .home--content p {
-  z-index: 5000;
+  z-index: 1000;
+  font-size: 1rem;
 }
 
 .home .home--content .home--buttons-container {
@@ -383,7 +373,7 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-top: 5vh;
-  z-index: 5000;
+  z-index: 1000;
 }
 
 .home .home--content .home--buttons-container .button--home {
@@ -408,17 +398,16 @@ header .toggler:checked ~ div .hamburger .hamburger--bar::before {
   border-radius: 0.7vh;
   height: 10vh;
   width: 85vw;
-  min-width: 100px;
+  max-width: 1200px;
   margin-bottom: 1vh;
-  padding: 0.5%;
 }
 
 .home .home--content .home--buttons-container a {
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
-  width: 98%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
 }
 
 .home .home--content .home--buttons-container .button {
@@ -612,7 +601,7 @@ html {
 .tools .tools--content {
   padding-top: 12vh;
   background-color: rgba(11, 179, 221, 0.767);
-  height: 60%;
+  height: 100%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -795,6 +784,7 @@ html {
 }
 
 .about {
+  height: 100vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
   -webkit-box-shadow: inset 0px 1vh 100vh 0px #0bb3dd;
@@ -812,31 +802,76 @@ html {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: silver;
-  background-image: radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent), radial-gradient(circle at 0 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
-  background-size: 100px 50px;
+  background: repeating-radial-gradient(circle at 0 0, #0bb3dd, #52a752 500px);
+  background-size: 100vw 100vh;
+}
+
+.about #about--card {
+  color: #c7c6c6;
+  margin: 1vh auto;
+  width: 40%;
+  min-width: 250px;
+  border-radius: 3vh;
+  padding-top: 1vh;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.about #about--card h1 {
+  color: #4d4d4d;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.about .about--container {
+  color: #4d4d4d;
+  margin: 0 auto;
+  min-width: 250px;
+  border-radius: 3vh;
+  padding: 1vh;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.about #about--container-p {
+  color: #4d4d4d;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 250px;
+  border-radius: 3vh;
+  padding: 1vh;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .about .about--content {
   margin: 0 auto;
   text-align: center;
+  height: 100%;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about .about--content .about--content-bio {
-  max-width: 500px;
   padding-left: 10vw;
   padding-right: 10vw;
-}
-
-.about .about--content .about--content-bio h1 {
-  margin: 0 auto;
-  padding: 2vh;
-  text-align: center;
-  font-weight: bolder;
-  letter-spacing: 1vh;
-}
-
-.about .about--content .about--content-bio p {
-  text-align: justify;
 }
 
 .about .about--content .about--content-bio img {
@@ -845,7 +880,11 @@ html {
   height: 40vw;
   z-index: 5000;
   border-radius: 50%;
-  border: 0.25em solid rgba(146, 153, 158, 0.74);
+  border: 0.25em solid rgba(146, 153, 158, 0.4);
+}
+
+.about .about--content #about--astronautIcon {
+  font-size: 10rem;
 }
 
 .about .about--content .about--content-icons {
@@ -866,7 +905,7 @@ html {
   width: 20vw;
   font-size: 6rem;
   color: #0bd6dd;
-  animation: iconsAnimation--hovering 1s infinite alternate-reverse ease-in-out, iconsAnimation--color 30s infinite alternate-reverse ease-in-out;
+  animation: iconsAnimation--hovering 1s infinite alternate-reverse ease-in-out, iconsAnimation--color 10s infinite alternate-reverse ease-in-out;
 }
 
 @-webkit-keyframes iconsAnimation--color {
@@ -1074,6 +1113,7 @@ footer {
   -ms-flex-line-pack: center;
       align-content: center;
   margin-bottom: 15vh;
+  background-color: black;
 }
 
 footer .footer--icon {
@@ -1104,20 +1144,29 @@ footer .footer--icon a {
 }
 
 @media only screen and (min-width: 568px) {
-  header div {
-    width: 5%;
-    height: 10vh;
-    margin-right: -10vw;
+  header {
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header .toggler {
-    left: 90%;
+  header .menu {
+    width: 60%;
   }
   .home {
     background-size: 100vw 100vh;
+    padding-top: 10vh;
   }
   .tools {
     background-size: 200vh 200vh;
     background-attachment: scroll;
+    height: 100vh;
   }
   .contact {
     background-size: 200vh 200vh;
@@ -1138,10 +1187,28 @@ footer .footer--icon a {
   .projects .projects--content ul li {
     max-width: 328px;
   }
+  .about .about--content h1 {
+    font-size: 2rem;
+  }
   .about .about--content .about--content-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .about .about--content-bio {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5vh;
+  }
+  footer {
+    margin-bottom: 0;
   }
 }
 

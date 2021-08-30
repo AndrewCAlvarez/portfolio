@@ -10,7 +10,7 @@
   background-attachment: fixed;
 
   .home--content {
-    color: $frost;
+    color: rgb(199, 198, 198);
     height: 100vh;
     display: flex;
     text-align: center;
@@ -38,7 +38,7 @@
         padding: 2%;
         width: 100%;
         height: 100%;
-        z-index: 5000;
+        z-index: 1000;
         border-radius: 50%;
         border: 0.25em solid $frost-dark;
       }
@@ -60,15 +60,6 @@
         opacity: 0.3;
         z-index: 0;
       }
-      #home--pic-bubble1 {
-        left: 15%;
-      }
-      #home--pic-bubble2 {
-        left: 75%;
-      }
-      #home--pic-bubble3 {
-        left: 90%;
-      }
     }
     .home--content-text {
       width: 100vw;
@@ -80,7 +71,8 @@
       }
     }
     p {
-      z-index: 5000;
+      z-index: 1000;
+      font-size: 1rem;
     }
 
     .home--buttons-container {
@@ -89,7 +81,7 @@
       justify-content: center;
       align-content: center;
       margin-top: 5vh;
-      z-index: 5000;
+      z-index: 1000;
 
       .button--home {
         display: flex;
@@ -106,17 +98,16 @@
         border-radius: 0.7vh;
         height: 10vh;
         width: 85vw;
-        min-width: 100px;
+        max-width: 1200px;
         margin-bottom: 1vh;
-        padding: 0.5%;
       }
 
       a {
         font-size: 1rem;
         text-decoration: none;
         text-align: center;
-        width: 98%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
       }
 
       .button {

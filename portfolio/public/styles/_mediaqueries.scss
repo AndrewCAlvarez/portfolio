@@ -16,25 +16,26 @@
   }
 }
 
-// May need to change this some more.  Not sure what the last mediaquery does.
+// May need to change this some more.
 @media only screen and (min-width: 568px) {
   header {
-    div {
-      width: 5%;
-      height: 10vh;
-      margin-right: -10vw;
-    }
-    .toggler {
-      left: 90%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .menu {
+      width: 60%;
     }
   }
   .home {
     background-size: 100vw 100vh;
+    padding-top: 10vh;
   }
 
   .tools {
     background-size: 200vh 200vh;
     background-attachment: scroll;
+    height: 100vh;
   }
 
   .contact {
@@ -67,9 +68,23 @@
 
   .about {
     .about--content {
+      h1 {
+        font-size: 2rem;
+      }
       .about--content-icons {
         display: flex;
       }
     }
+    .about--content-bio {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 5vh;
+    }
+  }
+
+  footer {
+    margin-bottom: 0;
   }
 }

@@ -20,10 +20,10 @@
       <div class="hamburger"><div class="hamburger--bar"></div></div>
       <div class="menu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li id="menu--toolsTab">   <a href="#tools"   ">Tools</a></li>
-          <li id="menu--aboutTab">   <a href="#about"   ">About</a></li>
-          <li id="menu--contactTab"> <a href="#contact" ">Contact</a></li>
+          <li id="menu--homeTab" onclick="scrollToHome()"><a href="#home">Home</a></li>
+          <li id="menu--toolsTab" onclick="scrollToTools()"><a href="#tools"   ">Tools</a></li>
+          <li id="menu--aboutTab" onclick="scrollToAbout()">   <a href="#about"   ">About</a></li>
+          <li id="menu--contactTab" onclick="scrollToContact()"> <a href="#contact" ">Contact</a></li>
           <li id="menu--projectsTab"><a href="./projects.html" target="_blank">Projects</a></li>
           <!-- <li id="menu--toolsTab">   <a href="#tools"   "><i class="fas fa-wrench"></i></a></li>
           <li id="menu--aboutTab">   <a href="#about"   "><i class="fas fa-user"></i></a></li>
@@ -45,18 +45,11 @@
         
         <div class="home--content-text">
           <div id="home--content-background"></div>
-          
           <h1>Andrew Alvarez</h1>
           <p>There's a whole world of code out there, and I am happy to be a small part of it.</p>
         </div>
         <div class="home--pic-container">
           <img src="./images/profilePicCropped.jpg" alt="" />
-          <div class="home--pic-bubble" id="home--pic-bubble0"></div>
-          <div class="home--pic-bubble" id="home--pic-bubble1"></div>
-          <div class="home--pic-bubble" id="home--pic-bubble2"></div>          
-          <div class="home--pic-bubble" id="home--pic-bubble0"></div>
-          <div class="home--pic-bubble" id="home--pic-bubble1"></div>
-          <div class="home--pic-bubble" id="home--pic-bubble2"></div>
         </div>
         <div class="home--buttons-container">
             <div>
@@ -80,34 +73,39 @@
             <i class="fab fa-github-alt"></i>
             <i class="fab fa-sass"></i>
             <i class="fab fa-node"></i> 
-            <i class="fab fa-react"></i>
-            <i class="fab fa-docker"></i>          
+            <i class="fab fa-react"></i>        
           </div>
         </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <div class="about--content">
-        <div class="about--content-icons">
+      <div class="about--content about--container">
+        <!-- <div class="about--content-icons">
             <i class="fas fa-people-carry"></i>
             <i class="fas fa-female"></i>
             <i class="fas fa-magnet"></i>
             <i class="fas fa-wrench"></i>
             <i class="fas fa-globe-americas"></i>
+        </div> -->
+        <div id="about--card">
+          <i class="fas fa-user-astronaut about--container" id="about--astronautIcon"></i>
+          <h1>About Me</h1>
         </div>
-        <h1>About Me</h1>
         <div class="about--content-bio">
-          <img src="./images/profilePicCropped.jpg" alt="" />
+          <!-- <img src="./images/profilePicCropped.jpg" alt="" /> -->
+          <div class="about--container" id="about--container-p">
             <p>
-              I'm a Florida native living and working in Gainesville. Over the years, I've had a passion for all things tech. I've developed websites, virtual reality experiences for me and my friends, and shared that interest with others.            </p>
+              I'm a Florida native living and working in Gainesville. Over the years, I've had a passion for all things tech. I've developed websites, virtual reality experiences for me and my friends, and shared that interest with others.            
+            </p>
+          </div>
         </div>
-        <div class="about--content-icons">
+        <div class="about--content-icons about--container">
             <i class="fas fa-hammer"></i>
             <i class="fas fa-toolbox"></i>
             <i class="fas fa-screwdriver"></i>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-user-astronaut"></i>
+            <i class="fas fa-globe-americas"></i>
+            <!-- <i class="fas fa-heart"></i> -->
         </div>
       </div>
     </section>
@@ -138,7 +136,8 @@
             ></a>
           </div>
     </footer>
-    <script type="module" src="./javascript/bubbleAnim.js"></script>
-    <script type="module" src="./javascript/rainbowAnimation.js"></script>
+    <script src="./javascript/bubbleAnim.js"></script>
+    <script src="./javascript/rainbowAnimation.js"></script>
+    <script src="./javascript/scrolling.js"></script>
   </body>
 </html>

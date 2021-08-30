@@ -1,11 +1,10 @@
 $blue: rgba(11, 179, 221, 1);
 $green: rgb(82, 167, 82);
-$frost: rgba(210, 222, 230, 0.74);
-$frost-dark: rgba(146, 153, 158, 0.74);
+$frost: rgba(210, 222, 230, 0.15);
+$frost-dark: rgba(146, 153, 158, 0.4);
 
 .button {
   color: white;
-  padding: 1em;
   border-radius: 0.7vh;
   background-color: $frost-dark;
 }
@@ -69,6 +68,7 @@ $frost-dark: rgba(146, 153, 158, 0.74);
 
 body {
   font-family: "Nunito", sans-serif;
+  background-color: black;
   // overflow: hidden;
 }
 

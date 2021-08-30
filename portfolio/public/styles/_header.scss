@@ -13,7 +13,6 @@ header {
     rgb(82, 167, 82)
   );
   padding-top: 5px;
-  border-top-left-radius: 10%;
 
   // div {
   //   width: 15%;
@@ -101,6 +100,7 @@ header {
 
       li {
         display: inline;
+        height: 80%;
 
         a {
           color: white;
@@ -108,6 +108,7 @@ header {
           text-decoration: none;
           font-size: 1rem;
           z-index: 1;
+          height: 100%;
           &::before {
             // & is sass functionality that means "this"
             // here it means a::before
