@@ -9,9 +9,8 @@ body {
   display: -ms-grid;
   display: grid;
   grid-auto-rows: minmax(126px, auto);
+  background-color: black;
   font-size: 1vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#52002f), color-stop(#34011e), color-stop(#3f0024), color-stop(#7c0046), to(#a90060));
-  background-image: linear-gradient(#52002f, #34011e, #3f0024, #7c0046, #a90060);
   font-family: "Merriweather", serif;
 }
 
@@ -121,6 +120,7 @@ nav .menu div a {
 
 .logo {
   display: block;
+  position: relative;
   margin: 6vh auto 10% auto;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -325,6 +325,17 @@ main img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+#videoID {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 75vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 footer {

@@ -1,6 +1,7 @@
 header {
   width: 100%;
   height: 10vh;
+  min-height: 50px;
   display: flex;
   z-index: 5000;
   position: fixed;
@@ -132,33 +133,33 @@ header {
     }
   }
 
-  .toggler {
-    left: 83%;
-    width: 10vh;
-    height: 10vh;
-    z-index: 2;
-    opacity: 0;
-    position: absolute;
-  }
+  // .toggler {
+  //   left: 83%;
+  //   width: 10vh;
+  //   height: 10vh;
+  //   z-index: 2;
+  //   opacity: 0;
+  //   position: absolute;
+  // }
 
-  .toggler:checked ~ div div .menu {
-    left: 0;
-  }
+  // .toggler:checked ~ div div .menu {
+  //   left: 0;
+  // }
 
-  .toggler:checked ~ div .hamburger .hamburger--bar {
-    top: 4vh;
-    transform: rotate(-135deg);
-  }
+  // .toggler:checked ~ div .hamburger .hamburger--bar {
+  //   top: 4vh;
+  //   transform: rotate(-135deg);
+  // }
 
-  .toggler:checked ~ div .hamburger .hamburger--bar::after {
-    top: 0vh;
-    left: 0vh;
-    opacity: 0;
-    transform: rotate(-5deg);
-  }
-  .toggler:checked ~ div .hamburger .hamburger--bar::before {
-    top: 0vh;
-    left: 0vh;
-    transform: rotate(90deg);
-  }
+  // .toggler:checked ~ div .hamburger .hamburger--bar::after {
+  //   top: 0vh;
+  //   left: 0vh;
+  //   opacity: 0;
+  //   transform: rotate(-5deg);
+  // }
+  // .toggler:checked ~ div .hamburger .hamburger--bar::before {
+  //   top: 0vh;
+  //   left: 0vh;
+  //   transform: rotate(90deg);
+  // }
 }

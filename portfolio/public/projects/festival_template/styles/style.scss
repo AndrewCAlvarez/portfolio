@@ -35,15 +35,8 @@ $color-secondary-2-4: #a90060;
 body {
   display: grid;
   grid-auto-rows: minmax(126px, auto);
-
+  background-color: black;
   font-size: 1vh;
-  background-image: linear-gradient(
-    $color-secondary-2-0,
-    $color-secondary-2-1,
-    $color-secondary-2-2,
-    $color-secondary-2-3,
-    $color-secondary-2-4
-  );
   font-family: "Merriweather", serif;
 }
 
@@ -141,6 +134,7 @@ nav {
 
 .logo {
   display: block;
+  position: relative;
   margin: 6vh auto 10% auto;
   grid-area: 1/1/2/2;
   color: white;
@@ -247,6 +241,24 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+}
+
+#videoID {
+  // position: absolute;
+  // left: 50%;
+  // transform: translateX(-50%) translateY(-50%);
+  // width: 100%;
+  // max-width: 100%;
+  // object-fit: cover;
+  // height: max-content;
+
+  object-fit: cover;
+  width: 100vw;
+  height: 75vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 footer {

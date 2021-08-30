@@ -1,6 +1,5 @@
 let aboutSection = document.getElementById('about');
-let green = rgb(82, 167, 82);
-let blue = rgb(11, 179, 221);
+
 aboutSection.style.backgroundImage = `
 radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
 radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),

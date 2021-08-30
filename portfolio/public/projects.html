@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./stylesCopy/main.css" />
+    <link rel="stylesheet" href="../public/styles/main.css" />
     <!-- Google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
@@ -15,7 +15,7 @@
     <title>Andrew C Alvarez</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <h4 class="logo"><a href="./index.html">Andrew C Alvarez</a></h4>
 
       <input type="checkbox" class="toggler" />
@@ -38,51 +38,54 @@
           </div>
         </div>
       </div>
+    </header> -->
+    <header>
+      <div class="menu">
+        <ul>
+          <li id="menu--homeTab" onclick="scrollToHome()"><a href="./index.html#home">Home</a></li>
+          <li id="menu--toolsTab" onclick="scrollToTools()"><a href="./index.html#tools"   ">Tools</a></li>
+          <li id="menu--aboutTab" onclick="scrollToAbout()">   <a href="./index.html#about"   ">About</a></li>
+          <li id="menu--contactTab" onclick="scrollToContact()"> <a href="./index.html#contact" ">Contact</a></li>
+          <li id="menu--projectsTab"><a href="./projects.html">Projects</a></li>
+          <!-- <li id="menu--toolsTab">   <a href="#tools"   "><i class="fas fa-wrench"></i></a></li>
+          <li id="menu--aboutTab">   <a href="#about"   "><i class="fas fa-user"></i></a></li>
+          <li id="menu--contactTab"> <a href="#contact" "><i class="fas fa-envelope"></i></a></li>
+          <li id="menu--projectsTab"><a href="./projects.html" target="_blank">P</a></li> -->
+          <!-- <li id="menu--githubTab">
+            <a
+              href="https://github.com/AndrewCAlvarez/portfolio"
+              target="_blank"><i class="fab fa-github-alt"></i></a
+            >
+          </li> -->
+        </ul>
+      </div>
     </header>
 
     <section class="projects" id="projects">
-      <div class="sectionDivider">
-        <a href="#projects"><i class="fas fa-angle-double-down"></i></a>
-      </div>
-
-      <h1>Previous Work</h1>
       <div class="projects--content">
         <ul>
           <li>
             <a href="./projects/catering_template/index.html">
               <img src="./images/cateringScreenshot.png" alt="" />
               <h4>Catering Co.</h4></a
-            >
-          </li>
-          <li>
-            <a href="./projects/festival_template/index.html">
-              <img src="./images/festivalScreenshot.png" alt="" />
-              <h4>Festival</h4></a
-            >
-          </li>
-        </ul>
+              >
+            </li>
+            <li>
+              <a href="./projects/festival_template/index.html">
+                <img src="./images/festivalScreenshot.png" alt="" />
+                <h4>Festival</h4></a
+                >
+              </li>
+              <li>
+                <a href="./projects/algorithms/index.html">
+                  <img src="./images/bubbleSort.png" alt="" />
+                  <h4>Bubble Sort Algorithm Demo</h4></a
+                >
+              </li>
+            </ul>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact--content">
-          <h1>Contact</h1>
-          <p>Reach me at 
-            <a href="mailto:andrew@acalvarez.com">andrew@acalvarez.com</a>  
-            or type a message below!
-          </p>
-          <form
-          action="https://formspree.io/f/mleaojzq"
-          method="POST"
-          >
-            <input type="email" name ="_replyto" placeholder="Email" />
-            <input name="subject" placeholder="Subject" />
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit" class="button--state-success">SEND</button>
-          </form>
-
-      </div>
-    </section>
     <footer>
         <div class="footer--icon">
             <a href="https://github.com/AndrewCAlvarez/dev/tree/master/portfolio/public"

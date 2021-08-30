@@ -26,6 +26,9 @@
     .menu {
       width: 60%;
     }
+    a {
+      font-size: 2rem;
+    }
   }
   .home {
     background-size: 100vw 100vh;
@@ -56,6 +59,11 @@
 }
 
 @media only screen and (min-width: 769px) {
+  .home {
+    a {
+      font-size: 2rem;
+    }
+  }
   .projects {
     .projects--content {
       ul {
