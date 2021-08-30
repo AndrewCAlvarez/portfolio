@@ -32,8 +32,8 @@
         rgb(82, 167, 82)
       );
       border-radius: 50%;
-      width: 40vw;
-      height: 40vw;
+      width: 15rem;
+      height: 15rem;
       img {
         padding: 2%;
         width: 100%;
@@ -58,6 +58,7 @@
           rgb(96, 161, 96)
         );
         opacity: 0.3;
+        z-index: 0;
       }
       #home--pic-bubble1 {
         left: 15%;
@@ -75,7 +76,11 @@
 
       h1 {
         font-size: 2.5rem;
+        z-index: 5000;
       }
+    }
+    p {
+      z-index: 5000;
     }
 
     .home--buttons-container {
@@ -84,6 +89,7 @@
       justify-content: center;
       align-content: center;
       margin-top: 5vh;
+      z-index: 5000;
 
       .button--home {
         display: flex;

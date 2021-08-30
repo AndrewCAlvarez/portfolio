@@ -8,6 +8,170 @@
     opacity: 1;
   }
 }
+@keyframes rainbowBackground {
+  0% {
+    background-image: radial-gradient(
+        circle at 100% 150%,
+        red 24%,
+        white 24%,
+        white 28%,
+        red 28%,
+        red 36%,
+        white 36%,
+        white 40%,
+        transparent 40%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 0 150%,
+        red 24%,
+        white 24%,
+        white 28%,
+        red 28%,
+        red 36%,
+        white 36%,
+        white 40%,
+        transparent 40%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 50% 100%,
+        white 10%,
+        red 10%,
+        red 23%,
+        white 23%,
+        white 30%,
+        red 30%,
+        red 43%,
+        white 43%,
+        white 50%,
+        red 50%,
+        red 63%,
+        white 63%,
+        white 71%,
+        transparent 71%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 100% 50%,
+        white 5%,
+        red 5%,
+        red 15%,
+        white 15%,
+        white 20%,
+        red 20%,
+        red 29%,
+        white 29%,
+        white 34%,
+        red 34%,
+        red 44%,
+        white 44%,
+        white 49%,
+        transparent 49%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 0 50%,
+        white 5%,
+        red 5%,
+        red 15%,
+        white 15%,
+        white 20%,
+        red 20%,
+        red 29%,
+        white 29%,
+        white 34%,
+        red 34%,
+        red 44%,
+        white 44%,
+        white 49%,
+        transparent 49%,
+        transparent
+      );
+    background-size: 50vw 25vw;
+  }
+  100% {
+    background-image: radial-gradient(
+        circle at 100% 150%,
+        silver 24%,
+        white 24%,
+        white 28%,
+        silver 28%,
+        silver 36%,
+        white 36%,
+        white 40%,
+        transparent 40%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 0 150%,
+        silver 24%,
+        white 24%,
+        white 28%,
+        silver 28%,
+        silver 36%,
+        white 36%,
+        white 40%,
+        transparent 40%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 50% 100%,
+        white 10%,
+        silver 10%,
+        silver 23%,
+        white 23%,
+        white 30%,
+        silver 30%,
+        silver 43%,
+        white 43%,
+        white 50%,
+        silver 50%,
+        silver 63%,
+        white 63%,
+        white 71%,
+        transparent 71%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 100% 50%,
+        white 5%,
+        silver 5%,
+        silver 15%,
+        white 15%,
+        white 20%,
+        silver 20%,
+        silver 29%,
+        white 29%,
+        white 34%,
+        silver 34%,
+        silver 44%,
+        white 44%,
+        white 49%,
+        transparent 49%,
+        transparent
+      ),
+      radial-gradient(
+        circle at 0 50%,
+        white 5%,
+        silver 5%,
+        silver 15%,
+        white 15%,
+        white 20%,
+        silver 20%,
+        silver 29%,
+        white 29%,
+        white 34%,
+        silver 34%,
+        silver 44%,
+        white 44%,
+        white 49%,
+        transparent 49%,
+        transparent
+      );
+    background-size: 50vw 25vw;
+  }
+}
 @keyframes htmlAnimation {
   0% {
     color: white;

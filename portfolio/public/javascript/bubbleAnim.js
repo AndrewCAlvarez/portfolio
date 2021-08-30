@@ -3,8 +3,8 @@ and then give them thier classes and ids along with generating the
 necessary javascript variables to use the bubble animation on.
  */
 
-let fallSpeed = 1000;
-let bubbleInterval = setInterval(fallAnim, 5);
+let fallSpeed = 30;
+let bubbleInterval = setInterval(fallAnim, fallSpeed);
 let windowWidth = window.innerWidth - 25;
 let windowHeight = window.innerHeight - 25;
 let bubbles = document.getElementsByClassName("home--pic-bubble");

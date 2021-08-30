@@ -118,12 +118,10 @@ header {
             top: 0;
             height: 100%;
             content: "";
-            position: absolute;
             transform: scaleX(0);
             transition: all 0.3s ease-in-out;
             padding: 5px;
             z-index: -1;
-            border-bottom: 2px solid white;
           }
           &:hover:before {
             transform: scaleX(1);
