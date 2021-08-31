@@ -407,6 +407,7 @@ header .menu ul li a:hover:before {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-bottom: 10vh;
   background-color: silver;
   background: repeating-radial-gradient(circle at 0 0, #0bb3dd, #52a752 500px);
   background-size: 100vw 100vh;
@@ -468,13 +469,12 @@ header .menu ul li a:hover:before {
 .projects h1 {
   max-width: 800px;
   width: 87%;
-  margin: 0 auto;
+  margin: 2vh auto 0vh;
   padding: 2vh;
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 1vh;
   color: #4d4d4d;
-  margin: 1vh auto;
   width: 40%;
   min-width: 250px;
   border-radius: 3vh;
@@ -519,7 +519,7 @@ header .menu ul li a:hover:before {
 }
 
 .projects .projects--content ul li {
-  margin: 1vh auto;
+  margin-bottom: 1vh;
   width: 80%;
   min-width: 250px;
   max-width: 600px;
@@ -530,24 +530,77 @@ header .menu ul li a:hover:before {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.projects .projects--content ul li .link--project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .projects .projects--content ul li a {
-  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #4d4d4d;
+  padding-bottom: 1rem;
   text-decoration: none;
 }
 
 .projects .projects--content ul li a img {
-  width: 80%;
+  width: 90%;
   border-radius: 3vh;
 }
 
 .projects .projects--content ul li a h4 {
   color: #4d4d4d;
-  width: 80%;
+  width: 90%;
   border-radius: 3vh;
-  padding-top: 1vh;
+  margin-top: 1vh;
+  padding: 1rem;
   -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+.projects .footer--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 5vh auto;
+  background-color: #6e5494;
+  border-radius: 50%;
+}
+
+.projects .footer--icon i {
+  font-size: 4rem;
+  color: #4d4d4d;
 }
 
 html {
