@@ -1,3 +1,19 @@
+.gradient-radial {
+  background: repeating-radial-gradient(circle at 0 0, #0bb3dd, #52a752 500px);
+}
+
+.gunmetal {
+  background: #032f3a;
+}
+
+.blue {
+  background: #0bb3dd;
+}
+
+.keppel {
+  background: #2fad98;
+}
+
 .button {
   color: white;
   border-radius: 0.7vh;
@@ -108,7 +124,73 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: black;
+  background-color: #524f4b;
+}
+
+section {
+  position: relative;
+}
+
+.wave-gunmetal-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-gunmetal-top svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 151px;
+}
+
+.wave-gunmetal-top .shape-fill {
+  fill: #032f3a;
+}
+
+.wave-gunmetal-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wave-gunmetal-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 151px;
+}
+
+.wave-gunmetal-bottom .shape-fill {
+  fill: #0bb3dd;
+}
+
+.wave-blue-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-blue-top svg {
+  position: relative;
+  display: block;
+  width: calc(123% + 1.3px);
+  height: 88px;
+}
+
+.wave-blue-top .shape-fill {
+  fill: #0bb3dd;
 }
 
 input,
@@ -235,7 +317,6 @@ header .menu ul li a:hover:before {
 }
 
 .home {
-  background-image: url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -277,7 +358,6 @@ header .menu ul li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home .home--content .home--pic-container {
@@ -831,8 +911,6 @@ html {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-color: silver;
-  background: repeating-radial-gradient(circle at 0 0, #0bb3dd, #52a752 500px);
   background-size: 100vw 100vh;
 }
 

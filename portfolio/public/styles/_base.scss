@@ -1,8 +1,26 @@
-$blue: rgba(11, 179, 221, 1);
-$green: rgb(82, 167, 82);
+$blue: #0bb3dd;
+$keppel: #2fad98;
+$green: #52a752;
+$gunmetal: #032f3a;
 $frost: rgba(210, 222, 230, 0.15);
 $frost-dark: rgba(146, 153, 158, 0.4);
 $dark-gray: #4d4d4d;
+$agreeable-gray: #524f4b;
+
+.gradient-radial {
+  background: repeating-radial-gradient(circle at 0 0, $blue, $green 500px);
+}
+
+.gunmetal {
+  background: $gunmetal;
+}
+.blue {
+  background: $blue;
+}
+
+.keppel {
+  background: $keppel;
+}
 
 .button {
   color: white;
@@ -68,10 +86,72 @@ $dark-gray: #4d4d4d;
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: black;
+  background-color: $agreeable-gray;
   // overflow: hidden;
 }
+section {
+  position: relative;
+}
+.wave-gunmetal-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.wave-gunmetal-top svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 151px;
+}
+
+.wave-gunmetal-top .shape-fill {
+  fill: #032f3a;
+}
+
+.wave-gunmetal-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-gunmetal-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 151px;
+}
+
+.wave-gunmetal-bottom .shape-fill {
+  fill: $blue;
+}
+
+.wave-blue-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-blue-top svg {
+  position: relative;
+  display: block;
+  width: calc(123% + 1.3px);
+  height: 88px;
+}
+
+.wave-blue-top .shape-fill {
+  fill: #0bb3dd;
+}
 // This code below stops the highlighting effect that happens on touch screens when
 // the elements listed are pressed.  This makes the experience more pleasant.
 input,
