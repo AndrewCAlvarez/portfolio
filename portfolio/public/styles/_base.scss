@@ -11,11 +11,15 @@ $agreeable-gray: #524f4b;
   background: repeating-radial-gradient(circle at 0 0, $blue, $green 500px);
 }
 
+.gradient {
+  background: linear-gradient(to right, $blue, $green);
+}
+
 .gunmetal {
   background: $gunmetal;
 }
 .blue {
-  background: $blue;
+  background: $frost;
 }
 
 .keppel {
